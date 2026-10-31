@@ -73,8 +73,8 @@ $ gset run fib.py -t go
 |--------|--------|
 | Python frontend (tree-sitter) | <span className="badge implemented">Implemented</span> |
 | Go backend | <span className="badge implemented">Implemented</span> |
-| Python / JS / Java / Ruby backends | <span className="badge planned">Planned (M2)</span> |
-| JS / TS frontend | <span className="badge planned">Planned (M2)</span> |
+| Python / JS / Java / Ruby backends | <span className="badge planned">Implemented</span> |
+| JS / TS frontend | <span className="badge planned">Implemented</span> |
 
 The M2 gate will require every corpus program to transpile to output that passes each target language's **own** syntax checker (`gofmt`/`go vet`, `python -m py_compile`, `node --check`, `javac`, `ruby -c`), gated on toolchain presence in CI.
 
