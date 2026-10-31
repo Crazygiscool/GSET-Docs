@@ -19,7 +19,7 @@ There is no VM. The output is real source code in the target language, executed 
 
 ## What GSET is today
 
-- **One frontend, one backend, end to end:** Python → Go. This is the M1 milestone, and its gate is that `gset transpile tests/corpus/py/fib.py --to go` emits Go that passes `gofmt` and `go vet`.
+- **Five Backends (M2 completed):** JavaScript/TypeScript frontend, all five backends (Go, Python, JavaScript, Java, Ruby), and the corpus-wide syntax-check gate.
 - **A typed IR instead of a hand-written AST.** Imports are first-class IR items, backends declare a capability matrix instead of silently dropping constructs, and a `CodeWriter` owns indentation.
 - **No configuration file yet.** The Go-era `gset.conf` was deleted. A `gset.toml` is planned (default target, interpreter paths, project root, dependency search roots) but nothing is implemented today.
 
@@ -27,7 +27,6 @@ There is no VM. The output is real source code in the target language, executed 
 
 The [roadmap](/docs/concepts/roadmap) follows the engineering plan in `docs/RUST_REWRITE_PLAN.md`:
 
-- **M2:** JavaScript/TypeScript frontend, all five backends (Go, Python, JavaScript, Java, Ruby), and the corpus-wide syntax-check gate.
 - **M3–M5:** more frontends (Go, Java, Ruby, C/C++, Rust), local project graphs, and ecosystem dependency resolution.
 - **M6:** cutover — packaging, docs, and the final deletion of the Go tree.
 

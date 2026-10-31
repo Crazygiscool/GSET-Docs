@@ -13,19 +13,19 @@ GSET is version **<ReleaseVersion />**. It is a **single static Rust binary** wi
 ## One-liner install script
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Crazygiscool/GSETLang/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Crazygiscool/GSET/main/install.sh | bash
 ```
 
 The installer downloads the matching release asset for your OS and architecture, installs the binary to `~/.local/bin/gset`, and adds `~/.local/bin` to your `PATH`. Pass `--dir <path>` to install elsewhere:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Crazygiscool/GSETLang/main/install.sh | bash -s -- --dir ~/bin
+curl -fsSL https://raw.githubusercontent.com/Crazygiscool/GSET/main/install.sh | bash -s -- --dir ~/bin
 ```
 
 On Windows use the PowerShell installer:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -Command "irm https://raw.githubusercontent.com/Crazygiscool/GSETLang/main/install.ps1 | iex"
+powershell -ExecutionPolicy Bypass -Command "irm https://raw.githubusercontent.com/Crazygiscool/GSET/main/install.ps1 | iex"
 ```
 
 Verify:
@@ -45,7 +45,7 @@ gset version
 
 ## Pre-built binaries
 
-Download the latest release from [GitHub Releases](https://github.com/Crazygiscool/GSETLang/releases). Every release ships:
+Download the latest release from [GitHub Releases](https://github.com/Crazygiscool/GSET/releases). Every release ships:
 
 - `gset-linux-amd64.tar.gz`, `gset-linux-arm64.tar.gz`, <ReleaseAsset suffix="-amd64.deb" />
 - `gset-darwin-amd64.tar.gz`, `gset-darwin-arm64.tar.gz`
@@ -60,8 +60,8 @@ privileges.
 ## Build from source
 
 ```bash
-git clone https://github.com/Crazygiscool/GSETLang.git
-cd GSETLang
+git clone https://github.com/Crazygiscool/GSET.git
+cd GSET
 cargo build --release --workspace
 ```
 
