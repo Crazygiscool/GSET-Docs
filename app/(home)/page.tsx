@@ -134,7 +134,7 @@ export default async function HomePage() {
                 Easy Installation
               </h3>
               <p className="text-muted-foreground">
-                Homebrew, AUR, Chocolatey, winget, a Debian package, and a
+                Homebrew, AUR, Chocolatey, a Debian package, and a
                 one-liner install for Linux, macOS, and Windows.
               </p>
             </div>
